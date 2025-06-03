@@ -29,5 +29,10 @@
             "name": "Nasr Al-Sayaghi",
             "role": "Devoloper"
         }
-    ]
+    ],
+    "config": {
+        "allow-plugins": {
+            "symfony/runtime": true
+        }
+    }
 }
