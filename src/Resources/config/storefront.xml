@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<storefront xmlns="http://www.shopware.com/schemas/storefront/1.0/config">
+    <styleFiles>
+        <file>app/storefront/src/scss/base.scss</file>
+    </styleFiles>
+    <scriptFiles>
+        <file>app/storefront/src/main.js</file>
+    </scriptFiles>
+</storefront>

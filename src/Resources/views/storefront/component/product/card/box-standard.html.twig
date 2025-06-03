@@ -1,0 +1,38 @@
+{% sw_extends '@Storefront/storefront/component/product/card/box-standard.html.twig' %}
+
+{% block component_product_box_content %}
+    <style>
+
+        .speccode-K1 { background-color: #FFD5AA; }
+        .speccode-K2 { background-color: #FFD5AA; }
+        .speccode-B1 { background-color:#fd7f7f; }
+        .speccode-B2 { background-color: #FFAAAA; }
+        .speccode-W1 { background-color: #ffff80; }
+        .speccode-W2 { background-color: #FFFFAA; }
+        .speccode-L1 { background-color: #C4AAFF; }
+        .speccode-L2 { background-color: #a47efa; }
+        .speccode-U1 { background-color: #AAFFD5; }
+        .speccode-U2 { background-color: #7ffdbf; }
+        .speccode-T1 { background-color:#AAD5FF; }
+        .speccode-T2 { background-color: #7dbdfb; }
+    </style>
+
+    {% set specCodeClass = '' %}
+    {% if product.extensions.spec_code is defined and product.extensions.spec_code.values|length > 0 %}
+        {% set specCodeClass = 'speccode-' ~ product.extensions.spec_code.values[0] %}
+    {% endif %}
+
+    <div class="product-box   {{ specCodeClass }}">
+       {{ parent() }}
+        {#  Result debugging
+                <pre>{{ product.extensions.spec_code|json_encode(constant('JSON_PRETTY_PRINT')) }}</pre>
+
+          {% if product.extensions.spec_code is defined and product.extensions.spec_code.values|length > 0 %}
+            {% for code in product.extensions.spec_code.values %}
+                <div class="speccode-box">{{ code }}</div>
+            {% endfor %}
+        {% else %}
+            <div>Kein spezifischer Code gefunden.</div>
+        {% endif %}#}
+    </div>
+{% endblock %}

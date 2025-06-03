@@ -1,0 +1,14 @@
+{
+    "speccode": {
+        "administration": {
+            "menuItem": "Homsym-Import-CSV-Specode",
+            "navItem": "HomSym Speccode",
+            "description": "Here is a CSV Import Plugin"
+        },
+        "importcsv-speccode": {
+            "noFile": "Please select a CSV file before submitting.",
+            "errorUpload": "There was an error while uploading the data.",
+            "successUpload": "Successfully imported {0} items."
+        }
+    }
+}

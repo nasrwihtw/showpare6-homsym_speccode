@@ -1,0 +1,33 @@
+{
+    "name": "homsym-import-csv-specode/homsym-import-csv-specode",
+    "description": "homsym-import-csv-specode/homsym-import-csv-specode",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.1",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "~6.6.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "HomsymImportCSVSpeccode\\HomsymImportCSVSpeccode",
+        "label": {
+            "de-DE": "HomSym Speccode",
+            "en-GB": "HomSym Speccode"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "HomsymImportCSVSpeccode\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HomsymImportCSVSpeccode\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nasr Al-Sayaghi",
+            "role": "Devoloper"
+        }
+    ]
+}
